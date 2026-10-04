@@ -1,0 +1,72 @@
+############################################
+# 🌍 Hugo Site Settings
+############################################
+
+baseURL = "https://pablo.spa/"
+languageCode = "en-us"
+title = "Pablo Spada"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+
+############################################
+# 🎨 PaperMod Theme Parameters
+############################################
+
+[params]
+  defaultTheme = "auto"
+  ShowLanguageSwitcher = true
+  showReadingTime = true
+  showPostNavLinks = true
+  showCodeCopyButtons = true
+  showBreadCrumbs = true
+  showToc = true
+  tocOpen = false
+  ShowShareButtons = false                     # ❌ Turn off share buttons
+  mainSections = ["posts"]
+  disableSpecial1stPost = true
+  disableExternalLinkIcon = true
+
+
+############################################
+# 🌐 Multilingual Configuration
+############################################
+
+[languages]
+
+  [languages.es]
+    languageName = "Español"
+    contentDir = "content/es"
+    title = "Pablo Spada"
+    weight = 1
+
+  [languages.es.params.homeInfoParams]
+    Title = "Hola, Bienvenido"
+    Content = "Este es mi blog personal. Aquí comparto ideas y reflexiones. Puedes cambiar de idioma arriba."
+
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    title = "Pablo Spada"
+    weight = 2
+    
+  [languages.en.params.homeInfoParams]
+    Title = "Hi, Welcome!"
+    Content = "This is my personal blog where I share thoughts and reflections. You can switch languages above."
+
+############################################
+# 📂 Menu Configuration
+############################################
+
+ [menu]
+
+# 🛠 Login Redirect to Decap Site
+  [[menu.main]]
+    identifier = "admin"
+    name = "🛠 Login"
+    url = "/admin/"
+    weight = 92
+    pre = ""
+    post = ""
+    relURL = false
