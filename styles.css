@@ -126,7 +126,7 @@ h1 em { font-family: var(--serif); color: var(--accent); font-weight: 400; lette
   .intro { font-size: .84rem; margin: 19px 0 17px; }
   .hero-art { align-self: flex-end; width: 83%; height: 285px; margin: 17px 0 18px 8%; }
   .sun { width: 112px; }
-  .hero-foot { gap: 10px; font-size: .5rem; }
+  .hero-foot { display: grid; gap: 6px; font-size: .5rem; }
   .section-shell, .work-list { width: calc(100% - 44px); }
   .section-shell { display: block; }
   .section-index { padding-top: 0; }
