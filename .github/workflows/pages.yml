@@ -26,7 +26,7 @@ jobs:
       - name: Prepare published files
         run: |
           mkdir -p _site/es _site/de
-          cp index.html styles.css robots.txt sitemap.xml _site/
+          cp index.html styles.css script.js robots.txt sitemap.xml _site/
           cp es/index.html _site/es/
           cp de/index.html _site/de/
           if [ -d assets ]; then cp -R assets _site/assets; fi
